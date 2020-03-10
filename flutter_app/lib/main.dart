@@ -14,10 +14,67 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
-      home: ImageCapture(),
+      home: MainMenu(),
     );
   }
 }
+
+class MainMenu extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Bamboo'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(30.0),
+              child:RaisedButton(
+                child:Text('Camera', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                color: Colors.lightGreenAccent,
+                padding: EdgeInsets.all(30.0),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                }
+              )
+            ),
+            Container(
+                margin: EdgeInsets.all(30.0),
+                child:RaisedButton(
+                    child:Text('Button 2', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.lightGreenAccent,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                    }
+                )
+
+            ),
+            Container(
+                margin: EdgeInsets.all(30.0),
+                child:RaisedButton(
+                    child:Text('Button 3', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.lightGreenAccent,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                    }
+                )
+            )
+          ]
+        )
+
+    )
+    );
+  }
+}
+
+
 
 /// Widget to capture and crop the image
 class ImageCapture extends StatefulWidget {

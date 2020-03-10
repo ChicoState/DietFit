@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\makin\\Desktop\\schoolfiles\\csci430\\flutter_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\Ryan\\AndroidStudioProjects\\flutter_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\makin\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\df7e4a0e8c9ae69cf2c7f2e8eb65ef0e\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Ryan\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\e72171448323ccf1b0d6773c49a695c3\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\makin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\bec1f22791df5a09f6bf47227cb101e4\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Ryan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\87c895508153d251c209166d44de3429\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
