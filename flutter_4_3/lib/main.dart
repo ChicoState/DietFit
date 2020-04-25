@@ -7,6 +7,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:image_cropper/image_cropper.dart';
+import 'user_form.dart';
+import 'acc_form.dart';
+import 'landing.dart';
 
 void main() async {
   runApp(MyApp());
@@ -17,7 +20,73 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
-      home: ImageCapture(),
+      home: MainMenu(),
+    );
+  }
+}
+
+class MainMenu extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Bamboo'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(30.0),
+              child:RaisedButton(
+                child:Text('Camera', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                color: Colors.green,
+                padding: EdgeInsets.all(30.0),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                }
+              )
+            ),
+            Container(
+                margin: EdgeInsets.all(30.0),
+                child:RaisedButton(
+                    child:Text('User Form', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.green,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>U_form()));
+                    }
+                )
+
+            ),
+            Container(
+                margin: EdgeInsets.all(30.0),
+                child:RaisedButton(
+                    child:Text('Account Creation', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.green,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>A_form()));
+                    }
+                )
+            ),
+            Container(
+                margin: EdgeInsets.all(30.0),
+                child:RaisedButton(
+                    child:Text('Landing Page (Temp)', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.green,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>Landing()));
+                    }
+                )
+            )
+          ]
+        )
+
+    )
     );
   }
 }
