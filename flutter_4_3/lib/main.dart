@@ -10,7 +10,7 @@ import 'package:image_cropper/image_cropper.dart';
 import 'user_form.dart';
 import 'acc_form.dart';
 import 'landing.dart';
-
+import 'recipie_search.dart';
 void main() async {
   runApp(MyApp());
 }
@@ -39,7 +39,7 @@ class MainMenu extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(30.0),
+              margin: EdgeInsets.all(15.0),
               child:RaisedButton(
                 child:Text('Camera', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
                 color: Colors.green,
@@ -50,7 +50,7 @@ class MainMenu extends StatelessWidget {
               )
             ),
             Container(
-                margin: EdgeInsets.all(30.0),
+                margin: EdgeInsets.all(15.0),
                 child:RaisedButton(
                     child:Text('User Form', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
                     color: Colors.green,
@@ -62,7 +62,7 @@ class MainMenu extends StatelessWidget {
 
             ),
             Container(
-                margin: EdgeInsets.all(30.0),
+                margin: EdgeInsets.all(15.0),
                 child:RaisedButton(
                     child:Text('Account Creation', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
                     color: Colors.green,
@@ -73,13 +73,24 @@ class MainMenu extends StatelessWidget {
                 )
             ),
             Container(
-                margin: EdgeInsets.all(30.0),
+                margin: EdgeInsets.all(15.0),
                 child:RaisedButton(
                     child:Text('Landing Page (Temp)', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
                     color: Colors.green,
                     padding: EdgeInsets.all(30.0),
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>Landing()));
+                    }
+                )
+            ),
+            Container(
+                margin: EdgeInsets.all(15.0),
+                child:RaisedButton(
+                    child:Text('Recipie Search', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    color: Colors.green,
+                    padding: EdgeInsets.all(30.0),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>RecipieSearch()));
                     }
                 )
             )
