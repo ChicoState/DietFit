@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:io';
 import 'main.dart';
+import 'package:http/http.dart' as http;
 
 class Post {
   final String title;
