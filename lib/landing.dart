@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:io';
 import 'main.dart';
+import 'acc_form.dart';
 
 class Landing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
-      home: MainMenu(),
+      home: LandingMenu(),
     );
   }
 }
 
-class MainMenu extends StatelessWidget {
+class LandingMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +49,7 @@ class MainMenu extends StatelessWidget {
                     color: Colors.green,
                     padding: EdgeInsets.all(10.0),
                     onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>A_form()));
                     }
                   )
                 ),
@@ -61,7 +62,7 @@ class MainMenu extends StatelessWidget {
                     color: Colors.green,
                     padding: EdgeInsets.all(10.0),
                     onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) =>ImageCapture()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>MainMenu()));
                     }
                   )
                 )

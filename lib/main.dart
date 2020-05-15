@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
-      home: MainMenu(),
+      home: Landing(),
     );
   }
 }
@@ -70,17 +70,6 @@ class MainMenu extends StatelessWidget {
                     padding: EdgeInsets.all(30.0),
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>A_form()));
-                    }
-                )
-            ),
-            Container(
-                margin: EdgeInsets.all(15.0),
-                child:RaisedButton(
-                    child:Text('Landing Page (Temp)', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
-                    color: Colors.green,
-                    padding: EdgeInsets.all(30.0),
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>Landing()));
                     }
                 )
             ),
