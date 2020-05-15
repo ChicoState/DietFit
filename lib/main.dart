@@ -10,7 +10,8 @@ import 'package:image_cropper/image_cropper.dart';
 import 'user_form.dart';
 import 'acc_form.dart';
 import 'landing.dart';
-import 'recipie_search.dart';
+import 'recipe_search.dart';
+//import 'test2.dart';
 void main() async {
   runApp(MyApp());
 }
@@ -90,7 +91,8 @@ class MainMenu extends StatelessWidget {
                     color: Colors.green,
                     padding: EdgeInsets.all(30.0),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>RecipieSearch()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>HomePage()));
+                      //runApp(new MytestApp());
                     }
                 )
             )
