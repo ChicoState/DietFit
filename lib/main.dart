@@ -76,7 +76,7 @@ class MainMenu extends StatelessWidget {
             Container(
                 margin: EdgeInsets.all(15.0),
                 child:RaisedButton(
-                    child:Text('Recipie Search', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
+                    child:Text('Recipe Search', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: 2.0)),
                     color: Colors.green,
                     padding: EdgeInsets.all(30.0),
                     onPressed: () {
